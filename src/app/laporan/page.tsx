@@ -1,11 +1,16 @@
-import Image from "next/image";
+import { NavBar } from "@/src/components/navbar";
+import FormLapor from "@/src/sections/form-laporan";
+import ReportFlow from "@/src/sections/report-flow";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <h1>Laporan</h1>
-      </main>
+    <div className="bg-[var(--background)]">
+      <NavBar />  
+      
+      <div className="flex w-full flex-col items-center justify-center py-24 px-16 bg-[var(--background)]">
+        <ReportFlow />
+        <FormLapor />
+      </div>
     </div>
   );
 }
