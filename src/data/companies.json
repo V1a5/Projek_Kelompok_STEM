@@ -1,0 +1,94 @@
+[
+  {
+    "id": "1",
+    "name": "Company 1",
+    "services": ["Septic tank", "Instalasi perpipaan", "Sedot WC"],
+    "audiences": ["Rumah tangga", "Industri"],
+    "priceDisplay": "Rp4.500",
+    "priceRange": "Rp4.500 - Rp1.500.000",
+    "priceCategory": "Berbayar",
+    "description": "Perumda Paljaya adalah BUMD Provinsi DKI Jakarta yang bertugas mengelola sistem air limbah domestik. Kami menyediakan layanan penyedotan septic tank, instalasi perpipaan air kotor, dan pengelolaan limbah untuk skala rumah tangga maupun kawasan industri.",
+    "logo": "https://images.unsplash.com/photo-1780259106571-a868700d818b?q=80&w=1149&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "thumbnails": [
+      "https://images.unsplash.com/photo-1779079516892-d1b8bc4dd64a?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1778067386866-bb44f175cf66?q=80&w=1086&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1780053643403-d1fcec304648?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Company 2",
+    "services": ["Sedot WC", "Septic tank"],
+    "audiences": ["Rumah tangga"],
+    "priceDisplay": "Rp350.000",
+    "priceRange": "Rp350.000 - Rp500.000",
+    "priceCategory": "Harga terendah",
+    "description": "Layanan cepat dan tanggap untuk area Jakarta Selatan, berpusat di Kalibata. Kami berfokus pada penyelesaian mampet dan perawatan septic tank rumah tangga dengan harga yang sangat terjangkau.",
+    "logo": "/company2.png",
+    "thumbnails": [
+      "/company2.png",
+      "/company2.png"
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Company 3",
+    "services": ["Instalasi perpipaan"],
+    "audiences": ["Komunitas", "Rumah tangga"],
+    "priceDisplay": "Gratis",
+    "priceRange": "Gratis (Subsidi Program)",
+    "priceCategory": "Gratis",
+    "description": "Program swadaya komunitas yang berfokus pada perbaikan sanitasi lingkungan padat penduduk untuk mencapai akses sanitasi dan air bersih yang layak. Melayani konsultasi dan perbaikan perpipaan dasar.",
+    "logo": "/company3.png",
+    "thumbnails": [
+      "/company3.png",
+      "/company3.png"
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Company 4",
+    "services": ["Septic tank", "Instalasi perpipaan", "Sedot WC"],
+    "audiences": ["Rumah tangga", "Industri"],
+    "priceDisplay": "Rp4.500",
+    "priceRange": "Rp4.500 - Rp1.500.000",
+    "priceCategory": "Berbayar",
+    "description": "Perumda Paljaya adalah BUMD Provinsi DKI Jakarta yang bertugas mengelola sistem air limbah domestik. Kami menyediakan layanan penyedotan septic tank, instalasi perpipaan air kotor, dan pengelolaan limbah untuk skala rumah tangga maupun kawasan industri.",
+    "logo": "/company4.png",
+    "thumbnails": [
+      "/company4.png",
+      "/company4.png",
+      "/company4.png"
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Company 5",
+    "services": ["Sedot WC", "Septic tank"],
+    "audiences": ["Rumah tangga"],
+    "priceDisplay": "Rp350.000",
+    "priceRange": "Rp350.000 - Rp500.000",
+    "priceCategory": "Harga terendah",
+    "description": "Layanan cepat dan tanggap untuk area Jakarta Selatan, berpusat di Kalibata. Kami berfokus pada penyelesaian mampet dan perawatan septic tank rumah tangga dengan harga yang sangat terjangkau.",
+    "logo": "/company5.png",
+    "thumbnails": [
+      "/company5.png",
+      "/company5.png"
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Company 6",
+    "services": ["Instalasi perpipaan"],
+    "audiences": ["Komunitas", "Rumah tangga"],
+    "priceDisplay": "Gratis",
+    "priceRange": "Gratis (Subsidi Program)",
+    "priceCategory": "Gratis",
+    "description": "Program swadaya komunitas yang berfokus pada perbaikan sanitasi lingkungan padat penduduk untuk mencapai akses sanitasi dan air bersih yang layak. Melayani konsultasi dan perbaikan perpipaan dasar.",
+    "logo": "/company7.png",
+    "thumbnails": [
+      "/company7.png",
+      "/company7.png"
+    ]
+  }
+]

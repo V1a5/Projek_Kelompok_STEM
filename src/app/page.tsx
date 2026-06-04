@@ -7,7 +7,7 @@ export default function Home() {
         
         {/* Buttons */}
         <div>
-          <a href='/company'>Company List</a>
+          <a href='/companies'>Company List</a>
         </div>
         <div>
           <a href='/laporan'>Laporan</a>
