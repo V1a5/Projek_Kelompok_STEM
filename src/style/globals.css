@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 @plugin "@tailwindcss/forms";
 
 :root {
   --accent: #1B928C;
   --accent-hover: #00796B;
-  --background: #ffffff;
+  --background: #FAFAFA;
   --foreground: #171717;
+  --foreground-hover: #424242;
+  --color-primary: #2FE5DC;
+  --color-primary-200: #1B928C;
+  --color-secondary: #2E3E5C;
+  --color-accent: #DCD300;
 }
 
 @theme inline {
@@ -13,6 +19,11 @@
   --color-accent-hover: var(--accent-hover);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-foreground-hover: var(--foreground-hover);
+  --color-primary: var(--color-primary);
+  --color-primary-200: var(--color-primary-200);
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -20,5 +31,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
