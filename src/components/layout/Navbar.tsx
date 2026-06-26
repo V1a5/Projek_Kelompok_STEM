@@ -9,7 +9,8 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-1">
+        <Link href="/" className="flex items-center gap-2">
+          <img src="logo/uniflow.png" alt="" className="w-10 h-10"/>
           <span className="text-2xl font-black text-gray-800 tracking-tight">
             Uni<span className="text-teal-600">Flow</span>
           </span>
