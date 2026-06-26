@@ -28,19 +28,25 @@ export default function FormLapor() {
     if (res.ok) {
       alert("Laporan berhasil dikirim!");
     } else {
-      alert("Gagal mengirim laporan. Coba lagi.");
+      alert("Gagal mengirim laporan. Coba lagi dalam beberapa menit.");
     }
   }
 
   return (
     <div className="flex justify-center bg-[var(--background)] font-sans">
+      {loading && (
+        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black/50 backdrop-blur-sm">
+          <div className="w-12 h-12 border-4 border-white border-t-transparent rounded-full animate-spin" />
+          <p className="mt-4 text-white text-sm font-medium">Mengirim laporan...</p>
+        </div>
+      )}
+
       <main className="flex flex-1 flex-col items-center justify-center py-16">
         <h1 className="text-3xl font-bold text-[var(--foreground)] text-center">
           Laporkan Kendala Sanitasi & Perpipaan
         </h1>
 
         <div className="mt-8 w-full bg-white p-8 rounded-lg shadow-lg border border-gray-300">
-          {/* ✅ added onSubmit here */}
           <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
 
             {/* Phone number */}
