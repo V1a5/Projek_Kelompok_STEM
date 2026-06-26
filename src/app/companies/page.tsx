@@ -35,11 +35,20 @@ export default function CompanyListPage() {
     const matchesAudience = selectedAudiences.length === 0 || 
       company.audiences.some(audience => selectedAudiences.includes(audience));
 
-    // Price filter
-    const matchesPrice = selectedPrice === '' || company.priceCategory === selectedPrice;
+    // Ignore strict match if user selected "Harga terendah"
+    const matchesPrice = selectedPrice === '' || selectedPrice === 'Harga terendah' || company.priceCategory === selectedPrice;
 
     return matchesSearch && matchesService && matchesAudience && matchesPrice;
   });
+
+  // --- SORTING ---
+  if (selectedPrice === 'Harga terendah') {
+    filteredCompanies.sort((a, b) => {
+      const priceA = a.price || 0; 
+      const priceB = b.price || 0;
+      return priceA - priceB;
+    });
+  }
 
   // --- PAGINATION LOGIC ---
   const totalPages = Math.ceil(filteredCompanies.length / itemsPerPage);

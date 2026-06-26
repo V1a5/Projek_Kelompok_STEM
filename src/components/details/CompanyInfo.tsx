@@ -26,7 +26,7 @@ export default function CompanyInfo({
       {/* Description */}
       <div className="mb-10">
         <h3 className="font-bold text-gray-800 mb-3 text-lg">Deskripsi:</h3>
-        <p className="text-gray-500 leading-relaxed text-justify">
+        <p className="text-gray-500 leading-relaxed">
           {description}
         </p>
       </div>
