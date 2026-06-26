@@ -1,4 +1,3 @@
-import { NavBar } from "@/src/components/navbar";
 import FormLapor from "@/src/sections/form-laporan";
 import ReportFlow from "@/src/sections/report-flow";
 

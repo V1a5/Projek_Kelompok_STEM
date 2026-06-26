@@ -21,8 +21,8 @@ export async function POST(req: NextRequest) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: 'onboarding@resend.dev',   //buat masih localhost pake onboardng, nanti klo udh deploy baru ubah jadi uniflow    
-      to: ['uniflow.univ@gmail.com'],       //buat testing cmn bisa pake uniflow, nnt udh deploy ubah jd pihak UNJ        
+      from: 'uniflow.univ@gmail.com',   //buat masih localhost pake onboardng, nanti klo udh deploy baru ubah jadi uniflow    
+      to: ['vlasmamokiak@gmail.com'],       //buat testing cmn bisa pake uniflow, nnt udh deploy ubah jd pihak UNJ        
       subject: `[Laporan] ${issueType} — ${location}`,
       attachments,
       html: `
