@@ -2,17 +2,17 @@
 import { useState } from "react";
 
 interface DropzoneProps {
-  onFileChange: (file: File | null) => void; // ✅ new prop
+  onFileChange: (file: File | null) => void;
+   
 }
 
 export default function Dropzone({ onFileChange }: DropzoneProps) {
   const [preview, setPreview] = useState<string | null>(null);
   const [fileName, setFileName] = useState<string | null>(null);
 
-  // ✅ single handler used by both input and drag-drop
   const processFile = (file: File) => {
     setFileName(file.name);
-    onFileChange(file); // ✅ pass file up to form
+    onFileChange(file); 
     const reader = new FileReader();
     reader.onloadend = () => setPreview(reader.result as string);
     reader.readAsDataURL(file);
@@ -40,7 +40,7 @@ export default function Dropzone({ onFileChange }: DropzoneProps) {
 
   return (
     <div className="flex flex-col gap-2">
-      <label className="text-sm font-medium text-[var(--color-primary-200)]">Foto Bukti</label>
+      <label className="text-sm font-medium text-[var(--color-primary-200)]">Foto Bukti <span className="text-red-500"> * </span> </label>
       <div
         onDrop={handleDrop}
         onDragOver={(e) => e.preventDefault()}
@@ -60,7 +60,6 @@ export default function Dropzone({ onFileChange }: DropzoneProps) {
                   className="hidden"
                 />
               </label>
-              {/* ✅ clear button */}
               <button
                 type="button"
                 onClick={handleClear}
@@ -87,11 +86,14 @@ export default function Dropzone({ onFileChange }: DropzoneProps) {
                 accept=".png,.jpg,.jpeg,.heic"
                 onChange={handleFileChange}
                 className="hidden"
+                required
               />
             </label>
           </>
         )}
+        
       </div>
+        <p className="text-red-500 text-sm">* required forms</p>  
     </div>
   );
 }

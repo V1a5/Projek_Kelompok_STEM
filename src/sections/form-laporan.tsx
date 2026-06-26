@@ -52,7 +52,7 @@ export default function FormLapor() {
             {/* Phone number */}
             <div className="flex flex-col gap-2">
               <label htmlFor="phoneNum" className="text-sm font-medium text-[var(--color-primary-200)]">
-                Nomor Telepon/WhatsApp
+                Nomor Telepon/WhatsApp <span className="text-red-500"> * </span>
               </label>
               <input
                 type="text"
@@ -67,7 +67,7 @@ export default function FormLapor() {
             {/* Location */}
             <div className="flex flex-col gap-2">
               <label htmlFor="lokasi" className="text-sm font-medium text-[var(--color-primary-200)]">
-                Lokasi Kejadian
+                Lokasi Kejadian <span className="text-red-500"> * </span>
               </label>
               <input
                 type="text"
@@ -82,7 +82,7 @@ export default function FormLapor() {
             {/* Jenis Kendala */}
             <div className="flex flex-col gap-2">
               <label htmlFor="jenis" className="text-sm font-medium text-[var(--color-primary-200)]">
-                Jenis Masalah
+                Jenis Masalah <span className="text-red-500"> * </span>
               </label>
               <select
                 id="jenis"
