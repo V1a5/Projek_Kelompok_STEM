@@ -49,8 +49,9 @@ export default async function CompanyDetailPage({ params }: { params: Promise<{ 
             name={company.name}
             priceRange={company.priceRange}
             description={company.description}
-            services={company.services.join(', ')}
-            areas={company.audiences.join(', ')}
+            services={company.services}
+            audiences={company.audiences}
+            website={company.website}
           />
           
         </div>
