@@ -2,7 +2,7 @@
 import { Resend } from 'resend';
 import { NextRequest, NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend('re_YUZKYP6U_Yfb49xvfF6BgqmB9X93KddpG');
 
 export async function POST(req: NextRequest) {
   try {
@@ -21,8 +21,8 @@ export async function POST(req: NextRequest) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: 'uniflow.univ@gmail.com',   //buat masih localhost pake onboardng, nanti klo udh deploy baru ubah jadi uniflow    
-      to: ['vlasmamokiak@gmail.com'],       //buat testing cmn bisa pake uniflow, nnt udh deploy ubah jd pihak UNJ        
+      from: 'muhammadilfi539@gmail.com',   //buat masih localhost pake onboardng, nanti klo udh deploy baru ubah jadi uniflow    
+      to: ['mickavallery@gmail.com'],       //buat testing cmn bisa pake uniflow, nnt udh deploy ubah jd pihak UNJ        
       subject: `[Laporan] ${issueType} — ${location}`,
       attachments,
       html: `
